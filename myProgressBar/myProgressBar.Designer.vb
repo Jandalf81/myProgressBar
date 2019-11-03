@@ -28,18 +28,22 @@ Partial Class myProgressBar
         '
         'pic_Frame
         '
+        Me.pic_Frame.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pic_Frame.Location = New System.Drawing.Point(0, 0)
         Me.pic_Frame.Name = "pic_Frame"
         Me.pic_Frame.Size = New System.Drawing.Size(100, 20)
         Me.pic_Frame.TabIndex = 0
         Me.pic_Frame.TabStop = False
         '
-        'UserControl1
+        'myProgressBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pic_Frame)
-        Me.Name = "UserControl1"
+        Me.MinimumSize = New System.Drawing.Size(100, 20)
+        Me.Name = "myProgressBar"
         Me.Size = New System.Drawing.Size(100, 20)
         CType(Me.pic_Frame, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
